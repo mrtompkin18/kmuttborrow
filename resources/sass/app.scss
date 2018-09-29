@@ -1,14 +1,25 @@
+// // Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@font-face {
+    font-family: 'Maledpan';
+    src: url('./Maledpan.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+* {
+    font-family: $font-family-sans-serif !important;
+}
+
+body {
+    background: $body-bg;
 }

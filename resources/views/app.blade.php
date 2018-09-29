@@ -8,16 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel</title>
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:400" rel="stylesheet" type="text/css">
-    <style>
-        * {
-             font-family: "Kanit" !important;
-        }
-        body {
-            background: #efefef;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 
 <body>

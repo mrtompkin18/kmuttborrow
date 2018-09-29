@@ -94583,14 +94583,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       user: {
         fname: "กิตติพงษ์",
-        lname: "เล้าอรุณ"
-      }
+        lname: "เล้าอรุณ",
+        email: "kittipong@mfec.co.th",
+        student_id: 57130500006
+      },
+      faculty: []
     };
   }
 });
@@ -94625,43 +94661,204 @@ var render = function() {
               "el-form",
               {
                 attrs: {
-                  "label-position": "right",
+                  "label-position": "top",
                   "label-width": "100px",
-                  model: "formLabelAlign",
-                  inline: "true"
+                  model: _vm.user
                 }
               },
               [
                 _c(
-                  "el-form-item",
-                  { attrs: { label: "ชื่อจริง" } },
+                  "el-row",
+                  { attrs: { gutter: 20 } },
                   [
-                    _c("el-input", {
-                      model: {
-                        value: _vm.user.fname,
-                        callback: function($$v) {
-                          _vm.$set(_vm.user, "fname", $$v)
-                        },
-                        expression: "user.fname"
-                      }
-                    })
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "ชื่อจริง" } },
+                          [
+                            _c("el-input", {
+                              attrs: { placeholder: "Please type.." },
+                              model: {
+                                value: _vm.user.fname,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "fname", $$v)
+                                },
+                                expression: "user.fname"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "นามสกุล" } },
+                          [
+                            _c("el-input", {
+                              attrs: { placeholder: "Please type.." },
+                              model: {
+                                value: _vm.user.lname,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "lname", $$v)
+                                },
+                                expression: "user.lname"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
                   ],
                   1
                 ),
                 _vm._v(" "),
                 _c(
-                  "el-form-item",
-                  { attrs: { label: "นามสกุล" } },
+                  "el-row",
+                  { attrs: { gutter: 20 } },
                   [
-                    _c("el-input", {
-                      model: {
-                        value: _vm.user.lname,
-                        callback: function($$v) {
-                          _vm.$set(_vm.user, "lname", $$v)
-                        },
-                        expression: "user.lname"
-                      }
-                    })
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "รหัสนักศึกษา" } },
+                          [
+                            _c("el-input", {
+                              attrs: { placeholder: "Please type.." },
+                              model: {
+                                value: _vm.user.student_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "student_id", $$v)
+                                },
+                                expression: "user.student_id"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "อีเมล" } },
+                          [
+                            _c("el-input", {
+                              attrs: { placeholder: "Please type.." },
+                              model: {
+                                value: _vm.user.email,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "email", $$v)
+                                },
+                                expression: "user.email"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-row",
+                  { attrs: { gutter: 20 } },
+                  [
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "พาสเวิร์ด" } },
+                          [
+                            _c("el-input", {
+                              attrs: { type: "password", autocomplete: "off" },
+                              model: {
+                                value: _vm.user.pass,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "pass", $$v)
+                                },
+                                expression: "user.pass"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-row",
+                  { attrs: { gutter: 20 } },
+                  [
+                    _c(
+                      "el-col",
+                      { attrs: { span: 12 } },
+                      [
+                        _c(
+                          "el-form-item",
+                          { attrs: { label: "พาสเวิร์ด(2)" } },
+                          [
+                            _c("el-input", {
+                              attrs: { type: "password", autocomplete: "off" },
+                              model: {
+                                value: _vm.user.checkPass,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.user, "checkPass", $$v)
+                                },
+                                expression: "user.checkPass"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-row",
+                  [
+                    _c(
+                      "center",
+                      [
+                        _c(
+                          "el-button",
+                          { attrs: { type: "primary", round: "" } },
+                          [_vm._v("Save")]
+                        )
+                      ],
+                      1
+                    )
                   ],
                   1
                 )
