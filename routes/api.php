@@ -13,6 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('users', 'UserController', [
-    'except' => ['create', 'edit', 'show']
-]);
+Route::resource('user', 'UserController');

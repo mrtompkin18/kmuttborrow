@@ -22,4 +22,16 @@
 
 body {
     background: $body-bg;
+    margin: 0;
+}
+
+.action-icon {
+    margin-left: 10px;
+    font-size: 16px;
+    color: $blue;
+    cursor: pointer;
+}
+
+.action-icon.delete {
+    color: $red !important;
 }

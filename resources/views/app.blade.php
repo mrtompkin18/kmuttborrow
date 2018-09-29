@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div id="app" class="content">
-      <user-form></user-form>
+     <div id="app" style="width:60%; margin: 100px auto">
+        @yield('content')
     </div>
     <script type="text/javascript" src="/js/app.js"></script>
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>

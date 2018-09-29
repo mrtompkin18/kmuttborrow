@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return User::latest()->get();
+        return User::get();
     }
 
     /**
@@ -45,8 +45,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        // $user = User::find($id);
-        return "5";
+        return User::findOrFail($id);
     }
 
     /**
@@ -56,7 +55,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id,Request $request)
     {
         $user = User::findOrFail($id);
         $user->user_fname = $request->user_fname;

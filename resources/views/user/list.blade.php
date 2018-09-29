@@ -1,4 +1,5 @@
 @extends("app")
+
 @section("content")
-555
+    <user-list></user-list>
 @endsection
