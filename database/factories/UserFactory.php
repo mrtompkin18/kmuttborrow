@@ -7,6 +7,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'user_fname' => $faker->firstNameMale,
         'user_lname' => $faker->lastName,
         'user_email' => $faker->unique()->safeEmail,
+        'user_student_id' => $faker->numberBetween($min = 1000000, $max = 9999999),
         'role_id' => 1,
         'class_id' => 1,
         'user_password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
